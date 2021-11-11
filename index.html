@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Dings
+        </title>
+    </head>
+    <body>
+        <script>
+            document.body.innerHTML+="<button id=\"butt\" onclick=\"killexe();\">BOMBE!</button>";
+            let butt = document.getElementById("butt");
+            butt.style.height = "50%";
+            butt.style.width = "50%";
+            butt.style.fontFamily = "Comic Sans MS";
+            butt.style.fontSize = "5em";
+            butt.style.transform = "translateY(50%)";
+            function killexe(){
+                while(true){
+                    window.resizeTo(Math.random()*1000, Math.random()*1000);
+                }
+            }
+        </script>
+    </body>
+</html>
